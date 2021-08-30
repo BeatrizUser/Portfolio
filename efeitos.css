@@ -125,3 +125,7 @@ input[type="checkbox"]:checked{
 input[type="checkbox"]:checked:before{
 	display: block;
 }
+.btnproximo
+{
+    background:rgba(233, 229, 6);
+}
