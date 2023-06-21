@@ -11437,7 +11437,9 @@ pre {
   min-height: 650px;
   border-bottom: 1px solid #dee2e6;
 }
-
+.reveal{
+  opacity: 0;
+}
 .header .container {
   height: 90%;
   display: -webkit-box;
