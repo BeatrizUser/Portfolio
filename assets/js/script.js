@@ -63,4 +63,52 @@ $(document).ready(function () {
       ScrollTrigger.create(config);
     });
   }
+  // Dados do radar chart
+  const data = {
+    labels: [
+      "Desenvolvimento Web",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vue.js",
+      "Node.js",
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "API REST",
+      "Git",
+      "AWS",
+      "Desenvolvimento de Software",
+    ],
+    datasets: [
+      {
+        label: "Minhas Habilidades",
+        data: [8.0, 9.0, 7.0, 8.5, 7.5, 8.0, 9.0, 7.0, 8.5, 7.5, 8.0, 9.0, 7.0],
+        backgroundColor: "#f5828042",
+        borderColor: "#F58280",
+        borderWidth: 2,
+      },
+    ],
+  };
+
+  // Configurações do radar chart
+  const options = {
+    scales: {
+      r: {
+          angleLines: {
+              display: false
+          },
+          suggestedMin: 0,
+          suggestedMax: 10,
+      }
+  }
+  };
+
+  // Criação do radar chart
+  const ctx = document.getElementById("radarChart").getContext("2d");
+  new Chart(ctx, {
+    type: "radar",
+    data: data,
+    options: options,
+  });
 });
