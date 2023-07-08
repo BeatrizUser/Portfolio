@@ -11479,7 +11479,7 @@ pre {
 }
 
 .header .container .img-holder {
-  height: 85%;
+  height: 55%;
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end;
